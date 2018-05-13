@@ -43,7 +43,10 @@ $(document).ready(function () {
 
 <style type="text/css">
 	body{ 
-	    background: url(image/bg.gif);
+	    background: url(image/bg.jpg);
+	    background-attachment:fixed;
+        background-repeat:no-repeat;
+        background-size:100% 100%; 
 		text-align:center;
 		font-family: Arial, Helvetica,sans-serif; 
 		font-size:15px;
@@ -200,7 +203,7 @@ background-color:#f5fafe;
 		font-size:18px;
 		margin:0;
 		margin-right:10px;
-		color:#888277;
+		color:#005AB5;
 	}
 	.movie_score{
 		font-size:18px;
@@ -494,7 +497,7 @@ a:hover {  color: #000000; text-decoration: none}
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script src = "js/modernizr.js"></script>
-<div id="pageControl" style="text-align: center; position:fixed;bottom:0;left:1% "class = "cd-form floating-labels">
+<div id="pageControl" style="text-align: center; position:fixed;bottom:0;right:1% "class = "cd-form floating-labels">
 				<h5><a href="index.jsp">退出登录</a></h5>
 </div>
 </body>
