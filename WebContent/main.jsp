@@ -21,7 +21,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>首页</title>
+<link rel="stylesheet" href="css/style1.css"> <!-- Resource style -->
 <script type="text/javascript" src="js/jquery.js"></script>
+
 	<script type="text/javascript">
 // Executes the function when DOM will be loaded fully
 $(document).ready(function () {	
@@ -60,7 +62,7 @@ $(document).ready(function () {
 	}	
 	.navigation  li {
 		float:left;			/* Show list items inline */
-		width:150px; 
+		width:204px; 
 		position:relative; 
 	}
 	.navigation  li a {
@@ -90,7 +92,7 @@ $(document).ready(function () {
 	}
 		
 	.navigation  ul li {
-		width:150px; 
+		width:204px; 
 		float:left; 
 		border-top:none;
 	}
@@ -110,28 +112,6 @@ $(document).ready(function () {
 		color:#F2861D;
 	}
 	
-	
-	#bar{
-		margin:0 auto;   
-     	width:1000px;   
-     	height:30px;  
-     	background:#dddddd;
-     	color:#F2861D;
-     	padding-left:50px;
-     	position: relative;
-     	margin-bottom:10px;
-	}
-	#bar ul{
-		padding:5px;
-		display: block;
-		margin: 0 auto;
-		position: relative;
-	}
-	#bar li{
-		float:left; 
-		list-style:none;
-		margin-right:40px
-	}
 	
 	#frameright ul{
 		padding:5px;
@@ -203,7 +183,7 @@ background-color:#f5fafe;
 		font-size:18px;
 		margin:0;
 		margin-right:10px;
-		color:#005AB5;
+		color:#fff;
 	}
 	.movie_score{
 		font-size:18px;
@@ -245,19 +225,13 @@ a:hover {  color: #000000; text-decoration: none}
 	%>
 	<p>当前用户：<%=userName %></p>
 	
-<div id="bar">
-<form action="main.jsp" accept-charset="utf-8" method="get" >
-		<ul>
-		<li><a href="">按名称搜索:</a></li>
-		<li><input type=text placeholder="关键字" name="key" ize=30 /></li>
-		<li><input type="submit" value="搜索" style="width: 80px;"></li>
-		</ul>
-		</form>
-</div>	
 
-<div style="width:650px; margin:0 auto">
+
+<div style="width:1024px; margin:0 auto">
 
 <ul class="navigation">
+            
+            
 			<li><a href="main.jsp?type=推荐">推荐电影</a></li>
 			<li><a href="main.jsp">所有类型</a>
 			<ul>
@@ -337,6 +311,18 @@ a:hover {  color: #000000; text-decoration: none}
 		</ul>
 		<div class="clear"></div>
 		</li>
+		
+		<li></li>
+		<form action="main.jsp" accept-charset="utf-8" method="get" >
+		<li><a href="">按名称搜索:</a>
+		<ul>
+		<li><input type=text placeholder="关键字" name="key" size=30 /></li>
+		<li><input type="submit" value="搜索" style="width: 80px;"></li>
+		</ul>
+		</form>
+		<div class="clear"></div>
+		</li>
+		
 </ul>
 
 <div class="clear"></div>
@@ -497,9 +483,14 @@ a:hover {  color: #000000; text-decoration: none}
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script src = "js/modernizr.js"></script>
-<div id="pageControl" style="text-align: center; position:fixed;bottom:0;right:1% "class = "cd-form floating-labels">
-				<h5><a href="index.jsp">退出登录</a></h5>
+<div id="pageControl" style="text-align: center; position:fixed;bottom:0;right:12% "class = "cd-form floating-labels">
+				<form action="index.jsp" method="post">
+		<div>
+				<input type="submit" value=" 退出登录">
+			</div>
+			</fieldset>
 </div>
 </body>
 
+		
 </html>
